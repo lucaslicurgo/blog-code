@@ -6,10 +6,6 @@ const { autenticador } = require('./intermediary/autenticador');
 
 const rotas = Router();
 
-rotas.get('/', (req, res) => {
-    return res.json({ msg: 'Servidor funcionando corretamente.' })
-});
-
 rotas.post('/usuarios', cadastrarUsuario);
 rotas.post('/login', login);
 rotas.get('/posts', listarPosts);
